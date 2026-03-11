@@ -32,5 +32,5 @@ app.post("/chat", async (req, res) => {
 
 app.get("/health", (_, res) => res.json({ status: "ok" }));
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => console.log(`Revenue Room proxy running on port ${PORT}`));
